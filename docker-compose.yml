@@ -1,0 +1,32 @@
+# version: '3.8'
+
+# services:
+#   web:
+#     image: clothdetection:latest  # Use your pre-built image
+#     command: python manage.py runserver 0.0.0.0:8000
+#     volumes:
+#       - .:/app  # Mount your local app directory into the container
+#     ports:
+#       - "8000:8000" 
+#     environment:
+#       # Set any environment variables your Django app may need
+#       - DEBUG=True
+
+
+
+
+
+
+version: '3.8'
+
+services:
+  web:
+    image: clothdetection:latest  # Use your pre-built image
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app  # Mount your local app directory into the container
+      - C:/Users/vinothg/Downloads/coordinates:/app/model  # Mount model directory to the container
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=True

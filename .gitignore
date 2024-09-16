@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+*.db
+
+# If you are using SQLite database files
+*.sqlite3
+
+# Local environment settings
+.env
+
+# Django migrations
+**/migrations/*.pyc
+**/migrations/*.pyo
+**/migrations/*.log
+**/migrations/__pycache__/
+**/migrations/*.py, except for __init__.py
+
+# Media files (if media is uploaded locally)
+media/
+
+# Static files (can be generated during deployment)
+staticfiles/
+static/
+
+# Node.js related files
+node_modules/
+
+# Docker files
+*.env
+docker-compose.override.yml
+__pycache__/
+# Dockerfile
+*.pid
+
+# VSCode and other editor settings
+.vscode/
+.idea/
+*.swp
+
+# Virtual environment
+venv/
+ENV/
+env/
+*.egg-info/
+
+# PyCharm
+.idea/
+
+# MacOS and Linux files
+.DS_Store
+*.swp
+*.swo
+
+
+myenv/
